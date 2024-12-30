@@ -1,5 +1,5 @@
 import sys
-from osgeo import gdal, ogr
+from osgeo import gdal, ogr, osr
 
 def vectorize_mask(mask_path, output_path):
     # Abrir a imagem raster
@@ -23,11 +23,23 @@ def vectorize_mask(mask_path, output_path):
     out_layer = out_datasource.CreateLayer("layer", srs, ogr.wkbPolygon)
 
     # Adicionar um campo (atributo) para armazenar os valores do raster
-    field = ogr.FieldDefn("value", ogr.OFTInteger)
-    out_layer.CreateField(field)
+    field_value = ogr.FieldDefn("value", ogr.OFTInteger)
+    out_layer.CreateField(field_value)
+
+    # Adicionar um campo para armazenar a área dos polígonos
+    field_area = ogr.FieldDefn("area", ogr.OFTReal)
+    out_layer.CreateField(field_area)
 
     # Vetorização usando o GDAL
     gdal.Polygonize(raster.GetRasterBand(1), None, out_layer, 0, [], callback=None)
+
+    # Iterar pelos polígonos e calcular a área
+    for feature in out_layer:
+        geom = feature.GetGeometryRef()
+        if geom:
+            area = geom.GetArea()  # Calcular a área do polígono
+            feature.SetField("area", area)  # Atribuir o valor da área
+            out_layer.SetFeature(feature)  # Atualizar a feature no GeoJSON
 
     print(f"Arquivo GeoJSON salvo em: {output_path}")
 
