@@ -1,9 +1,9 @@
-# bemagro
+# Bem Agro
  Desenvolvimento do desafio de IA da Bem Agro como pré-requisito a candidatura de Desenvolvedor De Visão Coputacional.
 
 ## Projeto: Vetorização de Máscaras com PyTorch
 
-Descrição
+### Descrição
 
 Este projeto utiliza o PyTorch para realizar a vetorização de máscaras de imagens. O objetivo é processar imagens, aplicar segmentação semântica e gerar representações vetoriais para uso em diferentes aplicações, como análise de dados espaciais, detecção de objetos ou processamento de imagens geoespaciais.
 
