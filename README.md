@@ -43,7 +43,6 @@ pip install torch torchvision pillow opencv-python gdal
 
 ## Estrutura do Projeto
 
-.
 01origin/            # Diretório para armazenar imagens de origem 
 02orthomozaic/       # Diretório para armazenar imagens geradas pelo script
 03binarize/          # Diretório para armazenar imagens binarizadas
@@ -88,6 +87,10 @@ Resultados: Os resultados serão salvos no diretório 04segmented/ com as másca
 Você pode substituir o modelo padrão por outro modelo treinado em PyTorch. 
 
 A rede neural utilizada é a U-Net. É uma rede neural profunda projetada para segmentação de imagens pixel a pixel. Composta por um encoder (extrai características) e um decoder (restaura resolução), usa conexões para alta precisão. Amplamente usada em geoprocessamento e visão computacional.
+
+## Considerações
+
+O desafio - 5. [Extra] Vetorização do resultado - proposto no documento (Desafio - IA - extra.pdf) teve a tentativa por dois caminhos diferentes sendo o primeiro pela utilização do "osgeo" com o script vectorize_mask.py e o segundo por meio da instalação do QGIS com o script vectorize_mask_qgis.py. Em ambos, o autor, não conseguiu um resultado satisfatório pois pelos conhecimentos atuais o problema se deu principalmente na execução das bibliotecas e seus ambientes de execução.
 
 ## Contato
 
