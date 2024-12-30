@@ -43,14 +43,23 @@ pip install torch torchvision pillow opencv-python gdal
 
 ## Estrutura do Projeto
 
---01origin/            # Diretório para armazenar imagens de origem 
---02orthomozaic/       # Diretório para armazenar imagens geradas pelo script
---03binarize/          # Diretório para armazenar imagens binarizadas
+01origin/            # Diretório para armazenar imagens de origem
+
+02orthomozaic/       # Diretório para armazenar imagens geradas pelo script
+
+03binarize/          # Diretório para armazenar imagens binarizadas
+
 04model/             # Diretório para armazenar o modelo treinado
+
 05segmented/         # Diretório para armazenar a máscara segmentada
+
 06polygons/          # Diretório para armazenar polígonos
+
 Scripts/             # Diretório para armazenar os scripts de cada etapa do desafio
+
 README.md            # Documentação do projeto
+
+Desafio - IA - extra.pdf # Documento/Briefing do projeto
 
 ## Passos para Execução
 
