@@ -13,7 +13,7 @@ Python: Linguagem principal do projeto.
 
 PyTorch: Framework de aprendizado de máquina para treinamento e inferência de redes neurais.
 
-torchvision: Biblioteca complementar para PyTorch, com modelos pré-treinados e ferramentas de visão computacional.
+Torchvision: Biblioteca complementar para PyTorch, com modelos pré-treinados e ferramentas de visão computacional.
 
 Pillow: Manipulação de imagens.
 
@@ -21,7 +21,7 @@ OpenCV (opcional): Para pré-processamento avançado de imagens.
 
 osgeo/GDAL (opcional): Para manipulação de dados geoespaciais, se necessário.
 
-Requisitos
+## Requisitos
 
 Certifique-se de ter as dependências instaladas:
 
@@ -41,7 +41,7 @@ Instale os pacotes necessários com:
 
 pip install torch torchvision pillow opencv-python gdal
 
-Estrutura do Projeto
+## Estrutura do Projeto
 
 .
 ├── data/                # Diretório para armazenar as imagens de entrada e saída
@@ -50,7 +50,7 @@ Estrutura do Projeto
 ├── results/             # Resultados gerados pelo modelo
 ├── README.md            # Documentação do projeto
 
-Passos para Execução
+## Passos para Execução
 
 Prepare os Dados: Coloque as imagens que deseja processar no diretório data/.
 
