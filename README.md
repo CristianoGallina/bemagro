@@ -1,5 +1,5 @@
 # Bem Agro
- Desenvolvimento do desafio de IA da Bem Agro como pré-requisito a candidatura de Desenvolvedor De Visão Coputacional.
+ Desenvolvimento do desafio de IA da Bem Agro como pré-requisito a candidatura de Desenvolvedor De Visão Computacional.
 
 ## Projeto: Vetorização de Máscaras com PyTorch
 
